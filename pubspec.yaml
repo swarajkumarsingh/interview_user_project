@@ -1,26 +1,47 @@
+# App Config
 name: interview_user_project
 description: A new Flutter project.
 publish_to: 'none' 
 version: 1.0.0+1
-
 environment:
   sdk: '>=2.18.2 <3.0.0'
+
+# App Dependencies
 dependencies:
+
+# Flutter SDK
   flutter:
     sdk: flutter
+
+  # Cupertino Icons 
   cupertino_icons: ^1.0.2
+
+  # HTTP request
   http: ^0.13.5
+
+  # State-Management Tool
   get: ^4.6.5
+
+  # Local-DB
   shared_preferences: ^2.0.15
 
+# Dev Dependencies
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
+  flutter_launcher_icons: "^0.10.0"
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/app_logo.png"
+
+# material-design
 flutter:
   uses-material-design: true
 
-  # To add assets to your application, add an assets section, like this:
+# Asset Image
   assets:
     - assets/images/
     - assets/icons/

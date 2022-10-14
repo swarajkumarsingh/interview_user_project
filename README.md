@@ -6,6 +6,14 @@ We are looking for a full-stack flutter developer, hence the task is curated acc
 Here is your task:
 Use the attached JSON file as your mock data as an API response, 
 
+## Bugs
+
+- [x] Clear TextEditingController
+
+## Pending 
+
+- [ ] Optimization
+
 ## Steps
 
 - [x] parse this user data and display it in a list view, alongside his name there will be a button named sign-in!

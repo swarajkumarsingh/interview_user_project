@@ -1,10 +1,11 @@
 // ignore_for_file: use_build_context_synchronously
 
-import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:flutter/material.dart';
+
 import 'package:interview_user_project/utils/utils.dart';
-import 'package:interview_user_project/views/pages/home_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:interview_user_project/views/pages/home_page.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage(
@@ -25,11 +26,14 @@ class ProfilePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Profile Page"),
         actions: [
+          /// [Home IconButton]
           IconButton(
               onPressed: () {
                 Get.back();
               },
               icon: const Icon(Icons.home)),
+
+          /// [Logout IconButton]
           IconButton(
               onPressed: () async {
                 final prefs = await SharedPreferences.getInstance();
@@ -48,6 +52,7 @@ class ProfilePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+            /// [Name Text]
             Text(
               "Welcome, $name",
               style: const TextStyle(
@@ -56,7 +61,11 @@ class ProfilePage extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
+
+            /// [Divider]
             const SizedBox(height: 40),
+
+            /// [Age Text]
             Text(
               "Age: $age",
               style: const TextStyle(
@@ -65,6 +74,8 @@ class ProfilePage extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
+
+            /// [Gender Text]
             Text(
               "Gender: $gender",
               style: const TextStyle(
