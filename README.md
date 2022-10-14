@@ -19,4 +19,4 @@ You will find the user-mock data in the data folder.
 
 
 
-## **Download Starter Project APK [here!](https://drive.google.com/file/d/1FmUeutNTZgGAw4MBhUcPOCNl-NW51KqG/view?usp=sharing)**
+## **Download App APK [here!](https://drive.google.com/file/d/1FmUeutNTZgGAw4MBhUcPOCNl-NW51KqG/view?usp=sharing)**
