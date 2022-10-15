@@ -39,7 +39,7 @@ class ProfilePage extends StatelessWidget {
                 final prefs = await SharedPreferences.getInstance();
 
                 await prefs.remove(id);
-                Get.offAll(() => const HomePage());
+                Get.back();
 
                 showSnackBar(context, "$name logged out");
               },

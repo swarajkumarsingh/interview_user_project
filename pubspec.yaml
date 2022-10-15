@@ -27,11 +27,18 @@ dependencies:
 
 # Dev Dependencies
 dev_dependencies:
+
+  # Flutter Tester
   flutter_test:
     sdk: flutter
+
+  # Flutter Lint
   flutter_lints: ^2.0.0
+
+  # Flutter launcher icon package
   flutter_launcher_icons: "^0.10.0"
 
+# Flutter Icon config
 flutter_icons:
   android: true
   ios: true

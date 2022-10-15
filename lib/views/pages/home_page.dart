@@ -98,21 +98,16 @@ class _HomePageState extends State<HomePage> {
                   try {
                     /// Set Local-Data
 
+                    final String age = ageController.text.toString();
+                    final String gender = genderController.text.toString();
+
                     final prefs = await SharedPreferences.getInstance();
-                    await prefs.setStringList(id, <String>[
-                      name,
-                      ageController.text.toString(),
-                      genderController.text.toString()
-                    ]);
+                    await prefs.setStringList(id, <String>[name, age, gender]);
                   } catch (e) {
                     showSnackBar(
                         context, "Error while setting the data, try again!");
                     return;
                   }
-
-                  /// Clear the TextEditingController values
-                  ageController.clear();
-                  genderController.clear();
 
                   /// Close the pop-up and then navigate further.
                   Get.back();
