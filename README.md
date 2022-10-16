@@ -40,7 +40,7 @@ lib
 ```
 
 
-## **Download App APK [here!](https://drive.google.com/file/d/1YufeIzHxLxPoVSeqffW25v-S5dvN7uDP/view?usp=sharing)**
+## **Download App APK [here!](https://drive.google.com/file/d/1qgWt7QEyjJtAZQ-KgPKkLbifETcReg3r/view?usp=sharing)**
 
 ## Screenshots
 
