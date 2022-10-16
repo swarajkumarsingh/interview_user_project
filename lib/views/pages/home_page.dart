@@ -103,22 +103,25 @@ class _HomePageState extends State<HomePage> {
 
                     final prefs = await SharedPreferences.getInstance();
                     await prefs.setStringList(id, <String>[name, age, gender]);
+
+                    /// Close the pop-up and then navigate further.
+                    Get.back();
+
+                    /// Push [Profile Screen] with Data (id, name, age, gender)
+                    Get.to(() => ProfilePage(
+                          id: id,
+                          name: name,
+                          age: age,
+                          gender: gender,
+                        ));
+
+                    ageController.clear();
+                    genderController.clear();
                   } catch (e) {
                     showSnackBar(
                         context, "Error while setting the data, try again!");
                     return;
                   }
-
-                  /// Close the pop-up and then navigate further.
-                  Get.back();
-
-                  /// Push [Profile Screen] with Data (id, name, age, gender)
-                  Get.to(() => ProfilePage(
-                        id: id,
-                        name: name,
-                        age: ageController.text.toString(),
-                        gender: genderController.text.toString(),
-                      ));
                 }
               },
               child: const Text("Submit"),
