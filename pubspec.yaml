@@ -38,6 +38,14 @@ dev_dependencies:
   # Flutter launcher icon package
   flutter_launcher_icons: "^0.10.0"
 
+  # Flutter Splash Screen 
+  flutter_native_splash: ^2.2.11
+
+# Flutter Splash Screen Config
+flutter_native_splash: 
+  color: "#ffffff"
+  image: "assets/images/app_logo.png"
+
 # Flutter Icon config
 flutter_icons:
   android: true
